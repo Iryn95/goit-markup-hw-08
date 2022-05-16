@@ -1,0 +1,39 @@
+.soc__list {
+    display: flex;
+    justify-content: center;
+}
+
+.soc__link{
+    width: 44px;
+    height: 44px;
+    background-color: var(--primary-white-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#AFB1B8 ;
+
+    transition: background-color 250ms cubic-bezier(0.4,0,0.2,1),color 250ms cubic-bezier(0.4,0,0.2,1);
+
+    &:hover,
+    &:focus {
+    background-color: var(--accent-color);
+    color: var(--primary-white-color);
+
+    }
+}
+
+.soc__item + .soc__item{
+    margin-left: 10px;
+}
+
+ .soc__icon{
+    fill: currentColor;
+}
+
+// .soc__link:hover,
+// .soc__link:focus {
+//     background-color: var(--accent-color);
+//     color: var(--primary-white-color);
+
+// }

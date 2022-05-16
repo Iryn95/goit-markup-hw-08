@@ -1,0 +1,19 @@
+.section{
+    padding: 94px 0;
+}
+.section-inter{
+    padding-bottom: 94px;
+}
+
+.section__title{
+    margin-bottom: 50px;
+    
+    color:var( --title-text-color) ;
+    @include font(36px,1.17,700,0.03em);
+
+    // font-weight: 700;
+    // font-size: 36px;
+    // line-height: 1.17;
+    text-align: center;
+//     letter-spacing: 0.03em;
+}

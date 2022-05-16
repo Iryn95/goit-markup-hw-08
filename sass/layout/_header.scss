@@ -1,0 +1,29 @@
+.container.header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
+}
+
+/* Logo */
+// .header{
+//     /* padding-top: 24px;
+//     padding-bottom: 25px; */
+//     border-bottom: 1px solid #ECECEC; 
+// }
+
+.logo {
+    color:var(--logo-color); 
+    font-family: Raleway,sans-serif;
+    @include font(26px,1.19,700,0.03em);
+    // font-size: 26px;
+    // font-weight: 700;
+    // line-height: 1.19;
+    // letter-spacing: 0.03em;
+    .accent{
+        color:var(--accent-color);
+    }
+}
+
+// .logo .accent{
+//     color:var(--accent-color);
+// }
