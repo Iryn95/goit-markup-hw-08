@@ -236,6 +236,7 @@
   line-height: 1.71;
   font-weight: 400;
   letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 .section {
@@ -244,6 +245,12 @@
 
 .section-inter {
   padding-bottom: 94px;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-inter {
+    display: none;
+  }
 }
 
 .section__title {
