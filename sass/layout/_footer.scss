@@ -6,8 +6,8 @@
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 70px;
-        // gap: 30px 165px;
+        // gap: 70px;
+        gap: 30px 165px;
       }
       @media (min-width: 1200px) {
         display: flex;
@@ -93,7 +93,7 @@
 // }
 
 .join {
-    margin-left: 70px;
+    // margin-left: 70px;
 
     // @media (min-width: 768px) {
     //     margin-top: 0px;
