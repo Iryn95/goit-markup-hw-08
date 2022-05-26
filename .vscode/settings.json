@@ -17,5 +17,7 @@
     ],
     "liveSassCompile.settings.generateMap": true,
     "liveServer.settings.port": 1235,
-    "liveSassCompile.settings.autoprefix": null
+    "liveSassCompile.settings.autoprefix": null,
+    "gutterpreview.currentColorForSVG": "blue",
+    "gutterpreview.enableReferenceLookup": true
   }
