@@ -39,8 +39,21 @@
     margin-bottom: 30px;
 }
 
+// .form{
+//     @media screen and (min-width: 480px) {
+//         width: 450px;
+//       }
+    
+//       @media screen and (min-width: 1200px) {
+//         width: 528px;
+//       }
+
+// }
+
 .form-label{
     margin-bottom: 10px;
+
+    
 }
 
 .modal-input{
@@ -130,13 +143,27 @@
     align-items: center;
 
     font-family: Roboto;
-    @include font(14px,1.71,400,0.03em);
+    @include font(11px,1.14,400,0.03em);
     // font-size: 14px;
     // font-weight: 400;
     // line-height: 1.71;
     // letter-spacing: 0.03em;
     text-align: left;
     /* margin-right: 8px; */
+
+    @media screen and (max-width: 479px) {
+        @include font(10px,1.11,400,0.03em);
+        // font-size: 10px;
+        // line-height: 1.11;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        @include font(14px,1.71,400,0.03em);
+        // font-size: 14px;
+        // line-height: 1.71;
+      }
+
+   
 }
 
 .check-icon{
@@ -152,6 +179,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+  
 }
 
 .input-check:checked + .check-text span{
@@ -167,7 +196,7 @@
     display: flex;
     font-family: Roboto;
     font-style: normal;
-    @include font(14px,1.71,400,0.03em);
+    @include font(11px,1.14,400,0.03em);
     // font-weight: normal;
     // font-size: 14px;
     // line-height: 1.71;
@@ -175,4 +204,17 @@
     color: var(--accent-color) ;
     text-decoration: underline;
     text-align: left;
+
+    @media screen and (max-width: 479px) {
+        @include font(10px,1.11,400,0.03em);
+        // font-size: 10px;
+        // line-height: 1.11;
+      }
+    
+      @media screen and (min-width: 1200px) {
+        @include font(14px,1.71,400,0.03em);
+        // font-size: 14px;
+        // line-height: 1.71;
+      }
+
   }
