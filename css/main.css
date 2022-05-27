@@ -58,8 +58,7 @@
   background-color: #fff;
   top: 0;
   right: 0;
-  padding: 15px 10px 48px 40px;
-  z-index: 999;
+  padding: 10px 15px  48px 40px;
 }
 
 .flex {
@@ -100,6 +99,7 @@
   border: none;
   margin-left: auto;
   cursor: pointer;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-close:hover, .menu-close:focus {
@@ -164,6 +164,12 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+}
+
+@media screen and (max-width: 410px) {
+  .mob-menu-list__social-item {
+    font-size: 12px;
+  }
 }
 
 .mob-menu-list__social-item:not(:first-child)::before {
@@ -233,7 +239,7 @@
   content: '';
   display: block;
   position: absolute;
-  width: 100%;
+  width: 107%;
   height: 4px;
   border-radius: 2px;
   background: var(--accent-color);
@@ -334,7 +340,11 @@
   padding: 200px 0;
   background-color: var(--bg-color);
   text-align: center;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/start-mob.jpg);
+  background-position: center;
+  height: 400px;
+  padding-top: 118px;
+  padding-bottom: 0px;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/header-img.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -352,7 +362,7 @@
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/start-tab-2.jpg);
   }
@@ -367,15 +377,9 @@
   }
 }
 
-@media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/start-2.jpg);
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .principles {
-    margin-bottom: 30px;
   }
 }
 
@@ -449,7 +453,12 @@
   font-weight: 700;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .principles__title {
+    text-align: center;
+  }
 }
 
 .principles__text {
@@ -458,7 +467,6 @@
   line-height: 1.71;
   font-weight: 400;
   letter-spacing: 0.03em;
-  margin-bottom: 30px;
 }
 
 .section {
@@ -746,20 +754,11 @@
   }
 }
 
-@media screen and (max-width: 479px) {
-  .filter {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-}
-
 .filter-link {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin-bottom: 40px;
-  grid-gap: 8px;
-  grid-row-gap: 15px;
 }
 
 @media (min-width: 768px) {
@@ -777,6 +776,7 @@
 
 .filter-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .style-filter {
@@ -813,7 +813,13 @@
   display: flex;
   flex-wrap: wrap;
   text-align: left;
-  margin-bottom: -30px;
+  justify-content: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .examples {
+    margin: -15px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -825,8 +831,8 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .examples .examples-item {
-    width: 354px;
-    margin-bottom: 30px;
+    flex-basis: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 
@@ -844,6 +850,12 @@
   box-sizing: border-box;
   border-top: none;
   padding: 20px 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .galery-desc {
+    flex-grow: 1;
+  }
 }
 
 .examples .title {
@@ -871,12 +883,6 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 1199px) {
-  .examples-link {
-    margin-right: 30px;
-  }
-}
-
 .examples .examples-link:hover,
 .examples.examples-link:focus {
   cursor: pointer;
@@ -896,7 +902,6 @@
 }
 
 .examples-top-text {
-  /* opacity: 1; */
   position: absolute;
   top: 0;
   /* left: 0; */
@@ -913,7 +918,7 @@
   height: 100%;
   width: 100%;
   transform: translateY(101%);
-  /* transition: transform 250ms cubic-bezier(0.4,0,0.2,1) ; */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-index {
