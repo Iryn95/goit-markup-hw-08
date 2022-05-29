@@ -27,7 +27,7 @@
     // width: 354px ;
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
-    box-sizing: border-box;
+    // box-sizing: border-box;
 
     
 }
@@ -89,7 +89,10 @@
 }
 
 .examples-link{
-    display: block;
+    // display: block;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
    
     color:var(--title-text-color) ;
 

@@ -467,8 +467,20 @@
   letter-spacing: 0.03em;
 }
 
+@media screen and (max-width: 1199px) {
+  .principles__text {
+    margin-bottom: 30px;
+  }
+}
+
 .section {
   padding: 60px 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .section-inter {
@@ -835,7 +847,6 @@
   .examples .examples-item {
     flex-basis: calc((100% - 60px) / 2);
     margin: 15px;
-    box-sizing: border-box;
   }
 }
 
@@ -879,7 +890,9 @@
 }
 
 .examples-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   color: var(--title-text-color);
   transition-property: border, box-shadow;
   transition-duration: 250ms;

@@ -110,7 +110,12 @@
 .principles__text{
     margin-top: 0;
     @include font(14px,1.71,400,0.03em);
-    // margin-bottom: 30px;
+   
+    @media screen and(max-width:1199px){
+   margin-bottom: 30px;
+//    padding-left: 15px;               
+    }
+    
         
     }
 
