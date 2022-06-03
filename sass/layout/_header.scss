@@ -1,34 +1,26 @@
-// .header{
-//     @media screen and (max-width: 767px) {
-//         padding-top: 16px;
-//       padding-bottom: 16px;
-//       }
-// }
+.header{
+    
+    border-bottom: 1px solid #ECECEC;
+}
 .container.header{
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
-
-    // @media screen and (max-width: 767px) {
-    //     max-width: 767px;
-    //   }
+    // border-bottom: 1px solid #ECECEC;
+    
 
       @media screen and (max-width: 767px) {
         padding-top: 16px;
         padding-bottom: 16px;
       }
 
-    // @media screen and (max-width: 767px) {
-    //     padding-top: 16px;
-    //   padding-bottom: 16px;
-    //   }
+   
 }
 
 /* Logo */
 // .header{
 //     /* padding-top: 24px;
 //     padding-bottom: 25px; */
-//     border-bottom: 1px solid #ECECEC; 
+//     
 // }
 
 .logo {
